@@ -1,5 +1,5 @@
 media:
-  input: src/media
-  output: build/media
+  input: src/assets
+  output: build/assets
 content:
   - label: Pages
