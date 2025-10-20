@@ -1,3 +1,1 @@
-media:
-  input: src/assets
-  output: build/assets
+media: images
