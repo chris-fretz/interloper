@@ -1,7 +1,7 @@
 ---
 title: Homepage
 heading: Welcome to the site!
-layout: "base.njk"
+layout: "layouts/base.njk"
 ---
 
 This is awesome
