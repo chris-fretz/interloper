@@ -6,7 +6,7 @@ components:
     fields:
       - name: content
         label: Content
-        type: text
+        type: rich-text
   
   hero_block:
     label: Hero Section
