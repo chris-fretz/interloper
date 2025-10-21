@@ -7,7 +7,6 @@ components:
       - name: content
         label: Content
         type: rich-text
-        description: Write some stuff here
   
   hero_block:
     label: Hero Section
