@@ -23,7 +23,6 @@ content:
     label: Pages
     type: collection
     path: src
-    filename: {primary}.md
     fields:
       - name: title
         label: Title
