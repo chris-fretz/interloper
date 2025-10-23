@@ -1,7 +1,6 @@
 ---
 title: Homepage
-heading: Welcome to the site!
-layout: "layouts/base.njk"
+blocks:
+  - _block: text_editor
+    content: Welcome to Interloper! Did you sneak in?
 ---
-
-This is awesome
