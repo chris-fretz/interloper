@@ -1,4 +1,5 @@
 ---
+layout: base.njk
 title: About
 blocks:
   - _block: text-editor

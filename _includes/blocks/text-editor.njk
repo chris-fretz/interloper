@@ -1,5 +1,5 @@
 <section class="text-editor">
     <div class="wrap">
-        {{ block.content | safe }}
+        {{ block.content | markdown | safe }}
     </div>
 </section>
