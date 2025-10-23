@@ -1,14 +1,14 @@
 media: images
 
 components:
-  text_editor:
+  text-editor:
     label: Text Editor
     fields:
       - name: content
         label: Content
         type: rich-text
   
-  hero_block:
+  hero-block:
     label: Hero Section
     fields:
       - name: heading
@@ -33,9 +33,9 @@ content:
         type: block
         list: true
         blocks:
-          - name: text_editor
+          - name: text-editor
             label: Text Editor
-            component: text_editor
+            component: text-editor
           - name: hero
             label: Hero
-            component: hero_block
+            component: hero-block

@@ -11,7 +11,10 @@
         <h1>{{ heading }}</h1>
     </header>
     <main>
-        {{ content | safe }}
+        {# Loop through blocks and render each one #}
+        {% for block in blocks %}
+            {% include "blocks/" + block._block + ".njk" %}
+        {% endfor %}
     </main>
 </body>
 </html>
