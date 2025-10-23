@@ -1,6 +1,6 @@
 ---
 title: Portfolio
 blocks:
-  - _block: text_editor
+  - _block: text-editor
     content: More content coming soon!
 ---
