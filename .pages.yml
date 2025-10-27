@@ -29,6 +29,10 @@ content:
         label: Title
         type: string
         required: true
+      - name: seo-description
+        label: SEO Description
+        type: text
+        maxLength: 145
       - name: blocks
         label: Page Blocks
         type: block

@@ -1,5 +1,8 @@
 @use "normalize";
-@use "variables" as *;
-@use "functions" as *;
+@use "config" as *;
 @use "fonts";
 @use "global";
+@use "header";
+
+// This takes all blocks defined using @forward in the blocks/_index.scss file
+@use "blocks";
