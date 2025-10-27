@@ -32,6 +32,7 @@ content:
       - name: seo-description
         label: SEO Description
         type: text
+        description: Add a description of the page describing its content, that is 145 characters or less. This description can be displayed in search results on Google and other search engines.
         options:
           maxlength: 145
       - name: blocks
