@@ -32,7 +32,8 @@ content:
       - name: seo-description
         label: SEO Description
         type: text
-        maxLength: 145
+        options:
+          maxlength: 145
       - name: blocks
         label: Page Blocks
         type: block
