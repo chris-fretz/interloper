@@ -1,8 +1,6 @@
 ---
 title: About
-seo-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-  fuga iste laudantium amet obcaecati in repellat, impedit maiores culpa?
-  Temporibus "
+seo_description: This is the SEO description. You like it?
 blocks:
   - _block: text-editor
     content: >-
