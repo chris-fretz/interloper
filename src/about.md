@@ -1,55 +1,8 @@
 ---
 title: About
-seo-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+seo-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
   fuga iste laudantium amet obcaecati in repellat, impedit maiores culpa?
-  Temporibus autem, eaque sit deleniti aperiam fugit, error itaque officia esse
-  incidunt quidem, possimus magni modi.Lorem ipsum dolor sit amet consectetur
-  adipisicing elit. Quos fuga iste laudantium amet obcaecati in repellat,
-  impedit maiores culpa? Temporibus autem, eaque sit deleniti aperiam fugit,
-  error itaque officia esse incidunt quidem, possimus magni modi.Lorem ipsum
-  dolor sit amet consectetur adipisicing elit. Quos fuga iste laudantium amet
-  obcaecati in repellat, impedit maiores culpa? Temporibus autem, eaque sit
-  deleniti aperiam fugit, error itaque officia esse incidunt quidem, possimus
-  magni modi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga
-  iste laudantium amet obcaecati in repellat, impedit maiores culpa? Temporibus
-  autem, eaque sit deleniti aperiam fugit, error itaque officia esse incidunt
-  quidem, possimus magni modi.Lorem ipsum dolor sit amet consectetur adipisicing
-  elit. Quos fuga iste laudantium amet obcaecati in repellat, impedit maiores
-  culpa? Temporibus autem, eaque sit deleniti aperiam fugit, error itaque
-  officia esse incidunt quidem, possimus magni modi.Lorem ipsum dolor sit amet
-  consectetur adipisicing elit. Quos fuga iste laudantium amet obcaecati in
-  repellat, impedit maiores culpa? Temporibus autem, eaque sit deleniti aperiam
-  fugit, error itaque officia esse incidunt quidem, possimus magni modi.Lorem
-  ipsum dolor sit amet consectetur adipisicing elit. Quos fuga iste laudantium
-  amet obcaecati in repellat, impedit maiores culpa? Temporibus autem, eaque sit
-  deleniti aperiam fugit, error itaque officia esse incidunt quidem, possimus
-  magni modi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga
-  iste laudantium amet obcaecati in repellat, impedit maiores culpa? Temporibus
-  autem, eaque sit deleniti aperiam fugit, error itaque officia esse incidunt
-  quidem, possimus magni modi.Lorem ipsum dolor sit amet consectetur adipisicing
-  elit. Quos fuga iste laudantium amet obcaecati in repellat, impedit maiores
-  culpa? Temporibus autem, eaque sit deleniti aperiam fugit, error itaque
-  officia esse incidunt quidem, possimus magni modi.Lorem ipsum dolor sit amet
-  consectetur adipisicing elit. Quos fuga iste laudantium amet obcaecati in
-  repellat, impedit maiores culpa? Temporibus autem, eaque sit deleniti aperiam
-  fugit, error itaque officia esse incidunt quidem, possimus magni modi.Lorem
-  ipsum dolor sit amet consectetur adipisicing elit. Quos fuga iste laudantium
-  amet obcaecati in repellat, impedit maiores culpa? Temporibus autem, eaque sit
-  deleniti aperiam fugit, error itaque officia esse incidunt quidem, possimus
-  magni modi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga
-  iste laudantium amet obcaecati in repellat, impedit maiores culpa? Temporibus
-  autem, eaque sit deleniti aperiam fugit, error itaque officia esse incidunt
-  quidem, possimus magni modi.Lorem ipsum dolor sit amet consectetur adipisicing
-  elit. Quos fuga iste laudantium amet obcaecati in repellat, impedit maiores
-  culpa? Temporibus autem, eaque sit deleniti aperiam fugit, error itaque
-  officia esse incidunt quidem, possimus magni modi.Lorem ipsum dolor sit amet
-  consectetur adipisicing elit. Quos fuga iste laudantium amet obcaecati in
-  repellat, impedit maiores culpa? Temporibus autem, eaque sit deleniti aperiam
-  fugit, error itaque officia esse incidunt quidem, possimus magni modi.Lorem
-  ipsum dolor sit amet consectetur adipisicing elit. Quos fuga iste laudantium
-  amet obcaecati in repellat, impedit maiores culpa? Temporibus autem, eaque sit
-  deleniti aperiam fugit, error itaque officia esse incidunt quidem, possimus
-  magni modi.
+  Temporibus "
 blocks:
   - _block: text-editor
     content: >-
