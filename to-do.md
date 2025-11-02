@@ -4,9 +4,9 @@
 4. Complete - Create config yaml file
 5. Complete - Test CMS functionality
 6. Complete - Set up/configure SASS
-7. Connect site to Netlify
-8. Build Template Components
-9. Build Blocks
+7. Build Template Components
+8. Build Blocks
+9. Connect site to Netlify
 
 Template Components
 - Header (mobile menu included)

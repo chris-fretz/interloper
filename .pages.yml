@@ -8,15 +8,31 @@ components:
         label: Content
         type: rich-text
   
-  hero-block:
-    label: Hero Section
+  hero-simple:
+    label: Simple Hero
     fields:
       - name: heading
-        label: Heading
+        label: Heading (H1)
         type: text
-      - name: image
-        label: Image
+        required: true
+      - name: subheading
+        label: Subheading
+        type: rich-text
+
+  hero-with-image:
+    label: Hero with Image
+    fields:
+      - name: heading
+        label: Heading (H1)
+        type: text
+        required: true
+      - name: subheading
+        label: Subheading
+        type: rich-text
+      - name: bg_image
+        label: Background Image
         type: image
+        required: true
 
 content:
   - name: pages
@@ -36,14 +52,26 @@ content:
         description: Add a description of the page's content that is 145 characters or less. This description can be displayed in search results on Google and other search engines. If you don't want Google to index this page, enter "no-index".
         options:
           maxlength: 145
+      # HERO SECTION - Required, choose one type
+      - name: hero
+        label: Hero Section
+        type: block
+        list: 
+          min: 1
+          max: 1
+        blocks:
+          - name: hero-simple
+            label: Simple Hero
+            component: hero-simple
+          - name: hero-with-image
+            label: Hero with Image
+            component: hero-with-image
+      # CONTENT - Optional flexible blocks
       - name: blocks
-        label: Page Blocks
+        label: Blocks
         type: block
         list: true
         blocks:
           - name: text-editor
             label: Text Editor
             component: text-editor
-          - name: hero
-            label: Hero
-            component: hero-block
