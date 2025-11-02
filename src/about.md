@@ -1,6 +1,10 @@
 ---
 title: About
 seo_description: This is the SEO description. You like it?
+hero:
+  - _block: hero-simple
+    heading: This is the About Page
+    subheading: You thought you'd learn what this site is all about!? Think again!!!
 blocks:
   - _block: text-editor
     content: >-
