@@ -3,7 +3,8 @@ title: Homepage
 seo_description: This is a rockin' homepage!
 hero:
   - _block: hero-simple
-    heading: Homepage
+    heading: "Hero Title "
+    subheading: Great subtitle
 blocks:
   - _block: text-editor
     content: >-
