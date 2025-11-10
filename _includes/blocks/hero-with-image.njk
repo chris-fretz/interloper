@@ -4,7 +4,9 @@
         {# <img src="" alt=""> #}
         <div class="overlay centered">
             <h1>{{ block.heading }}<h1>
-            {{ block.subheading | markdown | safe }}
+            {% if block.subheading %}
+                {{ block.subheading | markdown | safe }}
+            {% endif %}
         </div>
     </div>
 </section>

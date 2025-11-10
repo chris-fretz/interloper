@@ -1,8 +1,10 @@
 <section class="block hero-simple">
     <div class="wrap">
-        <div class="overlay centered">
+        <div class="centered">
             <h1>{{ block.heading }}<h1>
-            {{ block.subheading | markdown | safe }}
+            {% if block.subheading %}
+                {{ block.subheading | markdown | safe }}
+            {% endif %}
         </div>
     </div>
 </section>
