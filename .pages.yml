@@ -36,11 +36,11 @@ components:
   contact-form:
     label: Contact Form
     fields:
-      - name: contact_heading
+      - name: heading
         label: Contact Form Heading
         type: text
         description: Add a heading for the form. If none is entered, "Contact Us" will be the heading.
-      - name: contact_intro
+      - name: intro
         label: Form Intro (optional)
         type: rich-text
         description: Add an optional introduction giving any info you'd like about the communication process.
