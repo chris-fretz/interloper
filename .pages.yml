@@ -87,3 +87,6 @@ content:
           - name: text-editor
             label: Text Editor
             component: text-editor
+          - name: contact-form
+            label: Contact Form
+            component: contact-form
