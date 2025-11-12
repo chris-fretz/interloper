@@ -33,6 +33,18 @@ components:
         label: Background Image
         type: image
         required: true
+  contact-form:
+    label: Contact Form
+    fields:
+      - name: contact_heading
+        label: Contact Form Heading
+        type: text
+        description: Add a heading for the form. If none is entered, "Contact Us" will be the heading.
+      - name: contact_intro
+        label: Form Intro (optional)
+        type: rich-text
+        description: Add an optional introduction giving any info you'd like about the communication process.
+        
 
 content:
   - name: pages
