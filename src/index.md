@@ -4,7 +4,7 @@ seo_description: This is a rockin' homepage!
 hero:
   - _block: hero-simple
     heading: "Hero Title "
-    subheading: Hey Ian!
+    subheading: This is a subheading
 blocks:
   - _block: text-editor
     content: >-
