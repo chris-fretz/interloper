@@ -100,7 +100,7 @@ content:
     label: Pages
     type: collection
     path: src
-    exclude: [ blog/** ]
+    exclude: [ blog/**, _includes ]
     filename: "{primary}.md"
     fields:
       - name: title
