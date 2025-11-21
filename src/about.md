@@ -1,6 +1,7 @@
 ---
-title: About
-seo_description: This is the SEO description. You like it?
+page_setup:
+  title: About
+  seo_description: This is the About page
 hero:
   - _block: hero-simple
     heading: This is the About Page
