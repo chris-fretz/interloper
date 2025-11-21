@@ -47,6 +47,11 @@ components:
         
 
 content:
+  - name: header_menu
+    label: Header Menu
+    type: collection
+    path: src/_menus/header-menu.md
+  
   - name: pages
     label: Pages
     type: collection
