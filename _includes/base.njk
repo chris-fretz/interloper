@@ -17,9 +17,13 @@
             <a class="logo-link" href="/">Interloper</a>
             <nav class="nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    {# <li><a href="/portfolio">Portfolio</a></li> #}
+                {% for item in header_menu.menu.items %}
+                    <li>
+                    <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                        {{ item.link_text }}
+                    </a>
+                    </li>
+                {% endfor %}
                 </ul>
             </nav>
         </div>

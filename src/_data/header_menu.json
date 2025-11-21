@@ -1,6 +1,6 @@
 {
   "menu": {
-    "menu_items": [
+    "items": [
       {
         "url": "/",
         "link_text": "Home",
@@ -10,6 +10,11 @@
         "url": "/about/",
         "link_text": "About",
         "new_tab": false
+      },
+      {
+        "url": "https://www.google.com/",
+        "link_text": "Google",
+        "new_tab": true
       }
     ]
   }
