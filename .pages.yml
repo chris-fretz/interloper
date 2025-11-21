@@ -74,10 +74,6 @@ components:
     label: Page Setup
     type: object
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
       - name: seo_description
         label: SEO Description
         type: text
@@ -93,6 +89,10 @@ content:
     path: src/blog
     filename: "{primary}.md"
     fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
       - name: page_setup
         label: Page Setup
         component: page-setup
@@ -103,6 +103,10 @@ content:
     exclude: [ 'blog/**' ]
     filename: "{primary}.md"
     fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
       - name: page_setup
         label: Page Setup
         component: page-setup
