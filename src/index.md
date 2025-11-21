@@ -25,7 +25,7 @@ blocks:
 
 
       ![](/images/150x150.png)
-
-
-      /
+  - _block: contact-form
+    heading: Contact Me
+    intro: Want to collaborate? Hit me up!
 ---
