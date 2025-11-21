@@ -75,6 +75,7 @@ content:
     label: Pages
     type: collection
     path: src
+    exclude: [ _includes/ ]
     filename: "{primary}.md"
     fields:
       - name: title
