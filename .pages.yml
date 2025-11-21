@@ -89,7 +89,7 @@ content:
   - name: posts
     label: Blog Posts
     type: collection
-    path: src/blog/
+    path: src/blog
     filename: "{primary}.md"
     fields:
       - name: page_setup
@@ -98,8 +98,8 @@ content:
   - name: pages
     label: Pages
     type: collection
-    path: src/
-    exclude: blog/**
+    path: src
+    exclude: [ 'blog/**' ]
     filename: "{primary}.md"
     fields:
       - name: page_setup
