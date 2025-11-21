@@ -49,7 +49,7 @@ components:
   menu:
     label: Menu
     fields:
-      - name: menu_items
+      - name: items
         label: Menu Items
         type: object
         list: true

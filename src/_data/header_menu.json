@@ -1,6 +1,6 @@
 {
   "menu": {
-    "menu_items": [
+    "items": [
       {
         "url": "/",
         "link_text": "Home",
