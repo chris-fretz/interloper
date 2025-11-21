@@ -76,8 +76,7 @@ content:
           label: Open in New Tab?
           type: boolean
           default: false
-          required: true
-          description: Check "True" if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
+          description: Turn on if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
   - name: pages
     label: Pages
     type: collection
