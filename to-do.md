@@ -6,7 +6,9 @@
 6. Complete - Set up/configure SASS
 7. Build Template Components
 8. Build Blocks
-9. Connect site to Netlify
+9. Add JS for Copyright, mobile menu
+10. Style everything
+11. Connect site to Netlify
 
 Template Components
 - Header (mobile menu included)

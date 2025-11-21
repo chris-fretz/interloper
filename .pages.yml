@@ -71,22 +71,6 @@ components:
           description: Turn on if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
 
 content:
-  - name: header_menu
-    label: Header Menu
-    type: file
-    path: _data/header_menu.json
-    fields:
-      - name: menu
-        label: Menu
-        component: menu
-  - name: footer_menu
-    label: Footer Menu
-    type: file
-    path: _data/footer_menu.json
-    fields:
-      - name: menu
-        label: Menu
-        component: menu
   - name: pages
     label: Pages
     type: collection
@@ -130,3 +114,19 @@ content:
           - name: contact-form
             label: Contact Form
             component: contact-form
+  - name: header_menu
+    label: Header Menu
+    type: file
+    path: _data/header_menu.json
+    fields:
+      - name: menu
+        label: Menu
+        component: menu
+  - name: footer_menu
+    label: Footer Menu
+    type: file
+    path: _data/footer_menu.json
+    fields:
+      - name: menu
+        label: Menu
+        component: menu
