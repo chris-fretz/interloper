@@ -74,7 +74,15 @@ content:
   - name: header_menu
     label: Header Menu
     type: file
-    path: src/_data/header_menu.json
+    path: _data/header_menu.json
+    fields:
+      - name: menu
+        label: Menu
+        component: menu
+  - name: footer_menu
+    label: Footer Menu
+    type: file
+    path: _data/footer_menu.json
     fields:
       - name: menu
         label: Menu

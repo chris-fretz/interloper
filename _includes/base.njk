@@ -38,5 +38,21 @@
             {% include "blocks/" + block._block + ".njk" %}
         {% endfor %}
     </main>
+    <footer>
+        <div class="wrap flex-wrap">
+            <nav class="nav">
+                <ul>
+                {% for item in footer_menu.menu.items %}
+                    <li>
+                    <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                        {{ item.link_text }}
+                    </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </nav>
+            <p>&copy; {{ "now" | date("yyyy") }} Interloper. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
