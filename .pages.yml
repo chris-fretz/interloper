@@ -69,13 +69,9 @@ components:
           type: boolean
           default: false
           description: Turn on if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
-
-content:
-  - name: pages
-    label: Pages
-    type: collection
-    path: src
-    filename: "{primary}.md"
+  
+  page-setup:
+    label: Page Setup
     fields:
       - name: title
         label: Title
@@ -88,6 +84,26 @@ content:
         description: Add a description of the page's content that is 145 characters or less. This description can be displayed in search results on Google and other search engines. If you don't want Google to index this page, enter "no-index".
         options:
           maxlength: 145
+
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: src/blog/*.md
+    filename: "{primary}.md"
+    fields:
+      - name: page_setup
+        label: Page Setup
+        component: page-setup
+  - name: pages
+    label: Pages
+    type: collection
+    path: src/*.md
+    filename: "{primary}.md"
+    fields:
+      - name: page_setup
+        label: Page Setup
+        component: page-setup
       # HERO SECTION - Required, choose one type
       - name: hero
         label: Hero Section
