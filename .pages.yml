@@ -80,7 +80,9 @@ content:
     type: file
     path: src/_data/header_menu.json
     fields:
-      component: menu
+      - name: menu
+        label: Menu
+        component: menu
   - name: pages
     label: Pages
     type: collection
