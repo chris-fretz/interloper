@@ -49,10 +49,6 @@ components:
   menu:
     label: Menu
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
       - name: menu_items
         label: Menu Items
         type: object
