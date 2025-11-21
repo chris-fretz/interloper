@@ -33,6 +33,7 @@ components:
         label: Background Image
         type: image
         required: true
+
   contact-form:
     label: Contact Form
     fields:
@@ -44,14 +45,9 @@ components:
         label: Form Intro (optional)
         type: rich-text
         description: Add an optional introduction giving any info you'd like about the communication process.
-        
-
-content:
-  - name: menus
-    label: Menus
-    type: collection
-    path: src/_menus/
-    filename: "{primary}.md"
+  
+  menu:
+    label: Menu
     fields:
       - name: title
         label: Title
@@ -77,6 +73,14 @@ content:
           type: boolean
           default: false
           description: Turn on if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
+
+content:
+  - name: header_menu
+    label: Header Menu
+    type: file
+    path: src/_data/header_menu.json
+    fields:
+      component: menu
   - name: pages
     label: Pages
     type: collection
