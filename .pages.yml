@@ -80,7 +80,7 @@ content:
   - name: pages
     label: Pages
     type: collection
-    path: src
+    path: src/_pages/
     filename: "{primary}.md"
     fields:
       - name: title
