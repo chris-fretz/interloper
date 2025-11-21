@@ -39,7 +39,7 @@ components:
     fields:
       - name: heading
         label: Contact Form Heading
-        type: text
+        type: string
         description: Add a heading for the form. If none is entered, "Contact Us" will be the heading.
       - name: intro
         label: Form Intro (optional)
