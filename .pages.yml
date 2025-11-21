@@ -33,8 +33,51 @@ components:
         label: Background Image
         type: image
         required: true
+  contact-form:
+    label: Contact Form
+    fields:
+      - name: heading
+        label: Contact Form Heading
+        type: text
+        description: Add a heading for the form. If none is entered, "Contact Us" will be the heading.
+      - name: intro
+        label: Form Intro (optional)
+        type: rich-text
+        description: Add an optional introduction giving any info you'd like about the communication process.
+        
 
 content:
+  - name: menus
+    label: Menus
+    type: collection
+    path: src/_menus/
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: menu_item
+        label: Menu Item
+        type: block
+        list: true
+        blocks:
+        - name: url
+          label: URL Slug
+          type: string
+          required: true
+          description: Add the relative slug of the menu item (e.g. /about/ for the About page).
+        - name: link_text
+          label: Link Text
+          type: string
+          required: true
+          description: Add the text you want displayed for the link in the menu ("About" or "About Us" for the About page).
+        - name: new_tab
+          label: Open in New Tab?
+          type: boolean
+          default: false
+          required: true
+          description: Check "True" if you want the link to open in a new tab. This should mostly be done only for external links or links to files like PDFs.
   - name: pages
     label: Pages
     type: collection
@@ -75,3 +118,6 @@ content:
           - name: text-editor
             label: Text Editor
             component: text-editor
+          - name: contact-form
+            label: Contact Form
+            component: contact-form
