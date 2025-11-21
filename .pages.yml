@@ -59,9 +59,9 @@ content:
         required: true
       - name: menu_item
         label: Menu Item
-        type: block
+        type: object
         list: true
-        blocks:
+        fields:
         - name: url
           label: URL Slug
           type: string
