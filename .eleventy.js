@@ -2,6 +2,17 @@
 const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
+    // Pages collection
+    eleventyConfig.addCollection("pages", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/pages/*.md");
+    });
+
+    // Posts collection
+    eleventyConfig.addCollection("posts", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/posts/*.md")
+        .sort((a, b) => b.date - a.date); // Newest first
+    });
+    
     // Create filter to convert Markdown to HTML
     const md = new markdownIt({
         html: true,
@@ -17,8 +28,9 @@ module.exports = function (eleventyConfig) {
     return {
         dir: {
             input: "src",
-            includes: "../_includes",
-            output: "public"
+            output: "public",
+            includes: "_includes",
+            data: "_data"  
         }
     }
 }
