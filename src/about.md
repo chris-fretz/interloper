@@ -1,6 +1,6 @@
 ---
+title: About
 page_setup:
-  title: About
   seo_description: This is the About page
 hero:
   - _block: hero-simple
