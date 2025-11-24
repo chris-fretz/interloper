@@ -5,8 +5,4 @@ hero:
   - _block: hero-simple
     heading: This is a test post.
     subheading: Ok, ok, ok.
-blocks:
-  - _block: text-editor
-    content: >-
-    Kablooie!
 ---
