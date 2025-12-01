@@ -1,0 +1,23 @@
+@use '../config' as *;
+
+.contact-form {
+    .intro {
+        text-align: center;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .form-row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        gap: 30px;
+    }
+    .form-item {
+        display: flex;
+        flex-direction: column;
+    }
+}
