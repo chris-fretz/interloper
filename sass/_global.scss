@@ -1,8 +1,5 @@
 @use "config" as *;
 
-body {
-	background-color: #fdfbf8;
-}
 main {
 	min-height: 100vh;
 }
@@ -76,7 +73,7 @@ img {
 .btn {
 	display: inline-block;
 	// background-color: $maroon;
-	color: $white;
+	color: var(--text-primary);;
 	padding: 15px;
 	border-radius: 3px;
 	text-decoration: none;
@@ -84,7 +81,7 @@ img {
 	font-size: to-rem(18);
 	transition: $transition;
 	&:hover {
-		color: $white;
+		color: var(--text-primary);;
 		// background-color: $btn-hover;
 	}
 }

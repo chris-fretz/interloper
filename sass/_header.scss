@@ -2,7 +2,7 @@
 
 header {
     padding: 30px 0;
-    border-bottom: 3px solid $font-color;
+    border-bottom: 3px solid var(--text-primary);;
     & > .flex-wrap {
         align-items: center;
         justify-content: space-between;

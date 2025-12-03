@@ -8,10 +8,20 @@
 /*-----------
     # Colors
 -----------*/
-$font-color: #2c2c2c;
-// $maroon: #8c0717;
-// $btn-hover: #ef0824;
-$white: #fff;
+body {
+    --bg-color: #060913;
+    --text-primary: #fff;
+
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
+body.light {
+    --bg-color: #fdfbf8;;
+    --text-primary: #060913;
+    
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
 
 /*-----------
     # Fonts

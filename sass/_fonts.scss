@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-family: $body-font;
 	letter-spacing: 0;
-	color: $font-color;
+	color: var(--text-primary);;
 	font-weight: 700;
 	line-height: 1.5;
 }
@@ -32,11 +32,11 @@ p {
 	font-size:to-rem(16);
 	line-height: 1.5;
 	font-family: $body-font;
-	color: $font-color;
+	color: var(--text-primary);;
 }
 a {
     font-family: $body-font;
-    color: $font-color;
+    color: var(--text-primary);;
 	&:hover {
 		text-decoration: none;
 		// color: $maroon;
@@ -44,7 +44,7 @@ a {
 }
 ul, ol, li {
 	font-family: $body-font;
-	color: $font-color;
+	color: var(--text-primary);;
 }
 ul, ol {
 	margin-left: 0;

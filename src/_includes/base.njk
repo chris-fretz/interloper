@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.min.css">
+    <script src="/js/main.js"></script>
     {% if seo_description == "no-index" %}
         <meta name="robots" content="noindex">
     {% else %}
@@ -15,17 +16,23 @@
     <header>
         <div class="wrap flex-wrap">
             <a class="logo-link" href="/">Interloper</a>
-            <nav class="nav">
-                <ul>
-                {% for item in header_menu.menu.items %}
-                    <li>
-                    <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
-                        {{ item.link_text }}
-                    </a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </nav>
+            <div class="flex-wrap">
+                <nav class="nav">
+                    <ul>
+                    {% for item in header_menu.menu.items %}
+                        <li>
+                        <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                            {{ item.link_text }}
+                        </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+                <div>
+                    <button id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
+                    <button id="menu-toggle" aria-label="Toggle menu"></button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
