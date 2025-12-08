@@ -140,7 +140,7 @@ content:
   - name: header_menu
     label: Header Menu
     type: file
-    path: _data/header_menu.json
+    path: src/_data/header_menu.json
     fields:
       - name: menu
         label: Menu
@@ -148,7 +148,7 @@ content:
   - name: footer_menu
     label: Footer Menu
     type: file
-    path: _data/footer_menu.json
+    path: src/_data/footer_menu.json
     fields:
       - name: menu
         label: Menu
