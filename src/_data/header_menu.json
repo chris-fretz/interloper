@@ -12,9 +12,14 @@
         "new_tab": false
       },
       {
-        "url": "https://www.google.com/",
-        "link_text": "Google",
-        "new_tab": true
+        "url": "/portfolio/",
+        "link_text": "Portfolio",
+        "new_tab": false
+      },
+      {
+        "url": "/blog/",
+        "link_text": "Blog",
+        "new_tab": false
       }
     ]
   }
