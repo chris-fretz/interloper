@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.min.css">
-    <script src="/js/main.js"></script>
     {% if seo_description == "no-index" %}
         <meta name="robots" content="noindex">
     {% else %}
         <meta name="description" content="{{ seo_description }}">
     {% endif %}
 </head>
-<body>
+<body class="body">
+    <script>
+        // Check localStorage for a saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+
+        // If the saved preference is "light", apply the 'light' class immediately
+        if (savedTheme === 'light') {
+            document.body.classList.add('light');
+        } 
+        // Note: If savedTheme is 'dark' or null, no class is added, defaulting to your dark mode CSS.
+    </script>
     <header>
         <div class="wrap flex-wrap">
-            <a class="logo-link" href="/">Interloper</a>
-            <div class="flex-wrap">
+            <a class="logo-link" href="/">Steadyfooted</a>
+            <div class="flex-wrap header-right">
                 <nav class="nav">
                     <ul>
                     {% for item in header_menu.menu.items %}
@@ -28,9 +37,9 @@
                     {% endfor %}
                     </ul>
                 </nav>
-                <div>
-                    <button id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
-                    <button id="menu-toggle" aria-label="Toggle menu"></button>
+                <div class="icon-container">
+                    <button class="icon-btn" id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
+                    <button class="icon-btn" id="menu-toggle" aria-label="Toggle menu"></button>
                 </div>
             </div>
         </div>
@@ -61,5 +70,6 @@
             <p>&copy; 2025 Interloper. All rights reserved.</p>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>

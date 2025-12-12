@@ -20,3 +20,7 @@ Blocks:
 - Alt Content
 - Cards
 - Contact Form
+
+Difference between Steadyfooted and PENS
+- Steadyfooted header has Home About Portfolio Blog
+- PENS has Home About Blog(sample blog)

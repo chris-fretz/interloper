@@ -21,11 +21,15 @@ footer {
 .nav {
 	ul {
 		display: flex;
-		gap: 15px;
+		gap: 35px;
 		justify-content: center;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+		a {
+			font-weight: 700;
+			font-size: to-rem(20);
+		}
 	}
 }
 .block {
@@ -69,6 +73,14 @@ img {
 }
 .rounded {
 	border-radius: 50%;
+}
+.icon-container {
+	display: flex;
+	gap: 25px;
+}
+.icon-btn {
+	width: 26px;
+	height: 26px;
 }
 .btn {
 	display: inline-block;
