@@ -11,7 +11,7 @@
         <meta name="description" content="{{ seo_description }}">
     {% endif %}
 </head>
-<body class="body">
+<body>
     <script>
         // Check localStorage for a saved theme preference
         const savedTheme = localStorage.getItem('theme');
@@ -23,9 +23,9 @@
         // Note: If savedTheme is 'dark' or null, no class is added, defaulting to your dark mode CSS.
     </script>
     <header>
-        <div class="wrap flex-wrap">
+        <div class="wrap flex f-wrap">
             <a class="logo-link" href="/">Steadyfooted</a>
-            <div class="flex-wrap header-right">
+            <div class="flex f-wrap header-right">
                 <nav class="nav">
                     <ul>
                     {% for item in header_menu.menu.items %}
@@ -38,8 +38,12 @@
                     </ul>
                 </nav>
                 <div class="icon-container">
-                    <button class="icon-btn" id="dark-mode-toggle" aria-label="Toggle dark mode"></button>
-                    <button class="icon-btn" id="menu-toggle" aria-label="Toggle menu"></button>
+                    <button class="icon-btn flex f-center" id="menu-toggle" aria-label="Toggle menu">
+                        <span class="fa-solid fa-bars flex f-center"></span>
+                    </button>
+                    <button class="icon-btn flex f-center" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <span class="fa-solid fa-moon flex f-center"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -55,7 +59,7 @@
         {% endfor %}
     </main>
     <footer>
-        <div class="wrap flex-wrap">
+        <div class="wrap flex f-wrap">
             <nav class="nav">
                 <ul>
                 {% for item in footer_menu.menu.items %}
@@ -70,6 +74,7 @@
             <p>&copy; 2025 Interloper. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/6718c3b0d7.js" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

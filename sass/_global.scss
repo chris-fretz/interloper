@@ -1,11 +1,13 @@
 @use "config" as *;
-
+body {
+	margin: 0;
+}
 main {
 	min-height: 100vh;
 }
 header,
 footer {
-	& > .flex-wrap {
+	& > .f-wrap {
         justify-content: center;
     }
 	.logo-link {
@@ -21,8 +23,8 @@ footer {
 .nav {
 	ul {
 		display: flex;
+		flex-direction: column;
 		gap: 35px;
-		justify-content: center;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -62,9 +64,15 @@ img {
 		object-fit: cover;
 	}
 }
-.flex-wrap {
+.flex {
 	display: flex;
+}
+.f-wrap {
 	flex-wrap: wrap;
+}
+.f-center {
+	justify-content: center;
+	align-items: center;
 }
 .centered {
 	margin-left: auto;
@@ -77,25 +85,6 @@ img {
 .icon-container {
 	display: flex;
 	gap: 25px;
-}
-.icon-btn {
-	width: 26px;
-	height: 26px;
-}
-.btn {
-	display: inline-block;
-	// background-color: $maroon;
-	color: var(--text-primary);;
-	padding: 15px;
-	border-radius: 3px;
-	text-decoration: none;
-	margin-top: 10px;
-	font-size: to-rem(18);
-	transition: $transition;
-	&:hover {
-		color: var(--text-primary);;
-		// background-color: $btn-hover;
-	}
 }
 .two-column {
 	@media (min-width: 1024px) {
