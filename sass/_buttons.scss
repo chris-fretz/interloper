@@ -32,7 +32,11 @@ button {
         }
     }
 }
-
+#menu-toggle {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
 .btn {
 	display: inline-block;
 	// background-color: $maroon;

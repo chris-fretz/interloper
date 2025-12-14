@@ -8,8 +8,12 @@ header {
         justify-content: space-between;
     }
     .header-right {
-        gap: 35px;
+        gap: 25px;
         position: relative;
+        align-items: center;
+        @media (min-width: 768px) {
+            gap: 35px;
+        }
         .nav {
             position: absolute;
             z-index: 20;
@@ -22,11 +26,22 @@ header {
             max-height: 0;
             overflow: hidden;
             visibility: hidden;
-            transition: max-height 0.75s ease-in-out, visibility 0.75s ease-in-out;
             &.open {
                 max-height: 2000px;
                 visibility: visible;
                 transition: max-height 0.75s ease-in-out, visibility 0.75s ease-in-out;
+            }
+            @media (min-width: 768px) {
+                visibility: visible;
+                max-height: none;
+                position: static;
+                flex-direction: row;
+                padding: 0;
+                border: none;
+                border-radius: 0;
+                ul {
+                    flex-direction: row;
+                }
             }
         }
     }

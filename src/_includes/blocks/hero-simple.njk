@@ -1,9 +1,9 @@
 <section class="block hero-simple">
     <div class="wrap">
         <div class="centered">
-            <h1>{{ block.heading }}<h1>
+            <h1>{{ block.heading }}</h1>
             {% if block.subheading %}
-                {{ block.subheading | markdown | safe }}
+                <div class="subheading">{{ block.subheading | markdown | safe }}</div>
             {% endif %}
         </div>
     </div>

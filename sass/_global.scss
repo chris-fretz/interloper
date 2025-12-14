@@ -1,4 +1,7 @@
 @use "config" as *;
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 }
@@ -35,7 +38,7 @@ footer {
 	}
 }
 .block {
-    padding: clamp(80px, 6vw, 130px) 0;
+    padding: clamp(40px, 5vw, 60px) 0;
 }
 .bg {
     background-position: center;
