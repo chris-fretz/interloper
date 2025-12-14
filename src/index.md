@@ -22,9 +22,10 @@ blocks:
       ## This is a heading 2
 
 
-      <h3 style="text-align: center">This is a heading 3</h3><p
-      style="text-align: right"><img src="/images/150x150.png" alt="This is a
-      placeholder image"></p>
+      ### This is a heading 3
+
+
+      ![This is a placeholder image](/images/150x150.png)
   - _block: contact-form
     heading: Contact Me
     intro: Want to collaborate? Hit me up!
