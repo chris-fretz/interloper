@@ -25,8 +25,8 @@ blocks:
       ### This is a heading 3
 
 
-      <p style="text-align: center"><img src="/images/150x150.png" alt="This is
-      a placeholder image"></p>
+      <p style="text-align: right"><img src="/images/150x150.png" alt="This is a
+      placeholder image"></p>
   - _block: contact-form
     heading: Contact Me
     intro: Want to collaborate? Hit me up!
