@@ -1,10 +1,11 @@
 ---
 title: Homepage
-seo_description: This is a rockin' homepage!
+page_setup:
+  seo_description: This is the homepage. It's great
 hero:
   - _block: hero-simple
     heading: "Hero Title "
-    subheading: This is a subheading
+    subheading: Let's try again
 blocks:
   - _block: text-editor
     content: >-
@@ -21,7 +22,7 @@ blocks:
       ## This is a heading 2
 
 
-      This is a heading 3
+      ### This is a heading 3
 
 
       ![](/images/150x150.png)
