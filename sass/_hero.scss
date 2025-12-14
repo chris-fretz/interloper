@@ -1,0 +1,6 @@
+@use "config" as *;
+
+.hero-simple,
+.hero-image {
+    padding: clamp(40px, 5vw, 60px) 0 0 0;
+}
