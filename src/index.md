@@ -25,7 +25,7 @@ blocks:
       ### This is a heading 3
 
 
-      ![](/images/150x150.png)
+      ![This is a placeholder image](/images/150x150.png)
   - _block: contact-form
     heading: Contact Me
     intro: Want to collaborate? Hit me up!
