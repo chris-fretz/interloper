@@ -24,6 +24,13 @@ components:
   hero-with-image:
     label: Hero with Image
     fields:
+      - name: bg_image
+        label: Background Image
+        type: image
+        required: true
+      - name: alt_text
+        label: Image Alt Text
+        text: text
       - name: heading
         label: Heading (H1)
         type: text
@@ -31,10 +38,6 @@ components:
       - name: subheading
         label: Subheading
         type: rich-text
-      - name: bg_image
-        label: Background Image
-        type: image
-        required: true
 
   contact-form:
     label: Contact Form
