@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
         htmlOptions: {
 			imgAttributes: {
 				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+                // TO DO: Remove async decoding from here and add to img tag in templates below the fold
 				loading: "lazy",
 				decoding: "async",
 			}
@@ -25,7 +26,7 @@ module.exports = function (eleventyConfig) {
     }    );
 
     // Include images folder in the output
-    eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPassthroughCopy("images");
 
     // Include Javascript folder in the output
     eleventyConfig.addPassthroughCopy("js");

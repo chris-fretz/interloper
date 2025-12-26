@@ -1,8 +1,7 @@
 <section class="hero-image">
     <div class="wrap">
-        {# TO DO: Create image sizing and attributes w/ image plugin and hero image here #}
-        {# <img src="" alt=""> #}
-        <div class="overlay centered">
+        <img class="overlay" src="{{ block.hero_image }}" alt="{{ block.alt_text }}">
+        <div class="centered">
             <h1>{{ block.heading }}<h1>
             {% if block.subheading %}
                 {{ block.subheading | markdown | safe }}
