@@ -1,4 +1,4 @@
-media: src/images
+media: images
 
 components:
   text-editor:
