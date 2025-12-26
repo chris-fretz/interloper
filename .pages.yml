@@ -24,7 +24,7 @@ components:
   hero-with-image:
     label: Hero with Image
     fields:
-      - name: bg_image
+      - name: hero_image
         label: Hero Image
         type: image
         required: true
