@@ -4,7 +4,7 @@ page_setup:
   seo_description: This is the homepage. It's great
 hero:
   - _block: hero-with-image
-    hero_image: /images/hero-test.jpg
+    hero_image: images/hero-test.jpg
     alt_text: The desert is calling your name
     heading: Welcome to Steadyfooted
     subheading: Hope you enjoy it!
