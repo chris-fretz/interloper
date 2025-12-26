@@ -25,12 +25,13 @@ components:
     label: Hero with Image
     fields:
       - name: bg_image
-        label: Background Image
+        label: Hero Image
         type: image
         required: true
       - name: alt_text
         label: Image Alt Text
-        text: text
+        type: string
+        description: Add alt text for screen readers to describe the hero image.
       - name: heading
         label: Heading (H1)
         type: text
