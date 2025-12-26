@@ -1,6 +1,4 @@
-media: 
-  input: src/images
-  output: public/images
+media: src/images
 
 components:
   text-editor:
