@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{{ title }}{% if title != "Steadyfooted" %} | Steadyfooted{% endif %}</title>
     <link rel="stylesheet" href="/css/style.min.css">
     {% if seo_description == "no-index" %}
         <meta name="robots" content="noindex">
     {% else %}
-        <meta name="description" content="{{ seo_description }}">
+        <meta name="description" content="{{ page_setup.seo_description }}">
     {% endif %}
 </head>
 <body>
