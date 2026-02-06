@@ -1,5 +1,5 @@
 ---
-title: Homepage
+title: Steadyfooted
 page_setup:
   seo_description: This is the homepage. It's great
 hero:
