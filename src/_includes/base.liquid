@@ -51,13 +51,15 @@
         </div>
     </header>
     <main>
-        {# Hero section #}
-        {% set block = hero[0] %}
-        {% include "blocks/" + block._block + ".njk" %}
+        {% # Hero Section %}
+        {% assign heroBlock = hero[0] %}
+        {%- capture hero_template -%}blocks/{{ heroBlock._block }}.liquid{%- endcapture -%}
+        {% include hero_template, block: heroBlock %}
         
-        {# Loop through blocks and render each one #}
+        {% # Loop through blocks; build fails if block._block is missing or file doesn't exist {% endcomment %}
         {% for block in blocks %}
-            {% include "blocks/" + block._block + ".njk" %}
+            {%- capture template_path -%}blocks/{{ block._block }}.liquid{%- endcapture -%}
+            {% include template_path, block: block %}
         {% endfor %}
     </main>
     <footer>

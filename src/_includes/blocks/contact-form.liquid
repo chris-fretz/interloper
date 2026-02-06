@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="intro">
             {% if block.intro %}
-                {{ block.intro | markdown | safe }}
+                {{ block.intro | markdown }}
             {% endif %}
         </div>
         <form action="" method="POST" class="flex f-wrap form">

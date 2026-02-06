@@ -3,7 +3,7 @@
         <div class="centered">
             <h1>{{ block.heading }}</h1>
             {% if block.subheading %}
-                <div class="subheading">{{ block.subheading | markdown | safe }}</div>
+                <div class="subheading">{{ block.subheading | markdown }}</div>
             {% endif %}
         </div>
     </div>
