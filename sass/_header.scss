@@ -5,7 +5,10 @@ header {
     border-bottom: 3px solid var(--text-primary);;
     & > .f-wrap {
         align-items: center;
-        justify-content: space-between;
+        gap: 20px;
+        @media (min-width: 365px) {
+            justify-content: space-between;
+        }
     }
     .header-right {
         gap: 25px;
