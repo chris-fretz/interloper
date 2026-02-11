@@ -1,5 +1,26 @@
 @use "config" as *;
 
+.hero {
+  display: grid;
+  place-items: center;
+}
+
+.hero-img,
+.content {
+  grid-area: 1 / 1;    /* both occupy the same grid cell */
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  z-index: 2;
+  text-align: center;
+}
 .simple-hero {
     padding: clamp(40px, 5vw, 60px) 0 0 0;
 }
