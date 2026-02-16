@@ -10,14 +10,14 @@ function handleThemeToggleClick() {
   // Check the *new* state after toggling
   if (body.classList.contains('light')) {
     localStorage.setItem('theme', 'light');
-    // Switch to moon icon for light mode
-    themeIcon.classList.remove('fa-moon');
-    themeIcon.classList.add('fa-sun');
-  } else {
-    localStorage.setItem('theme', 'dark');
-    // Switch to sun icon for dark mode
+    // Switch to sun icon for light mode
     themeIcon.classList.remove('fa-sun');
     themeIcon.classList.add('fa-moon');
+  } else {
+    localStorage.setItem('theme', 'dark');
+    // Switch to moon icon for dark mode
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
   }
 }
 
@@ -27,8 +27,8 @@ function initThemeToggle() {
     if (themeToggle) {
         // Set initial icon based on current theme
         if (body.classList.contains('light')) {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
         }
         
         themeToggle.addEventListener('click', handleThemeToggleClick);
