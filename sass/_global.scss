@@ -56,6 +56,12 @@ footer {
 	margin: 0 auto;
 	padding: 0px 15px;
 }
+.pt-50 {
+	padding-top: 50px;
+}
+.pb-50 {
+	padding-bottom: 50px;
+}
 img {
 	display: block;
 	margin: 0;
@@ -87,8 +93,11 @@ img {
 	margin-right: auto;
 	text-align: center;
 }
-.rounded {
+.circular {
 	border-radius: 50%;
+}
+.rounded {
+	border-radius: 4px;
 }
 .icon-container {
 	display: flex;
@@ -113,7 +122,8 @@ img {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-color: rgba(255, 255, 255, 0.45);
+		background-color: var(--bg-color);
+		opacity: 0.3;
 		border-radius: 3px;
 		z-index: 1; 
 	}

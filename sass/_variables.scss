@@ -22,13 +22,16 @@ body.light {
     background-color: var(--bg-color);
     color: var(--text-primary);
 }
+$white: #fff;
+$black: #000;
+$green: #009958;
+$dark-green: #17734c;
 
 /*-----------
     # Fonts
 -----------*/
 $header-font: Verdana, sans-serif;
 $body-font: Arial, sans-serif;
-
 /*-----------
     # Misc
 -----------*/
