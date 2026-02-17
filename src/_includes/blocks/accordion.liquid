@@ -1,0 +1,32 @@
+{% # Check if each group should be its own HTML section %}
+<section class="section accordion">
+    <div class="wrap">
+        <div class="accordion-intro">
+            {% if block.intro %}
+                {{ block.intro | markdown }}
+            {% endif %}
+        </div>
+        {% # start group loop %}
+        <div class="accordion-group">
+            <div class="group-intro">
+                {% if block.intro %}
+                    {{ block.intro | markdown }}
+                {% endif %}
+            </div>
+            {% # start loop %}
+            <div class="accordion-row" {% if schema == "yes" %}itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{% endif %}>
+                <div class="accordion-question">
+                    <h3 {% if schema == "yes" %}itemprop="name"{% endif %}>{{ block.accordion_question | markdown }}</h3>
+                    <button class="open-close"></button>
+                </div>
+                <div class="accordion-answer" {% if schema == "yes" %}itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"{% endif %}>
+                    <div class="margin-off" {% if schema == "yes" %}itemprop="text"{% endif %}>
+                        {{ block.accordion_answer | markdown }}
+                    </div>
+                </div>
+            </div>
+            {% # end loop %}
+        </div>
+        {% # end grouploop %}
+    </div>
+</section>

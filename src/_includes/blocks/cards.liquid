@@ -1,0 +1,19 @@
+<section class="section cards">
+    <div class="wrap">
+        <div class="intro">
+            {% if block.intro %}
+                {{ block.intro | markdown }}
+            {% endif %}
+        </div>
+        <div class="flex f-wrap f-center">
+            {% # Start loop %}
+            {% # TO DO figure out how card links/buttons should work %}
+            <article class="card">
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+            </article>
+            {% # End loop %}
+        </div>
+    </div>
+</section>
