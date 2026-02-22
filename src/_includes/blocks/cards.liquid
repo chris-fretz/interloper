@@ -6,12 +6,12 @@
             {% endif %}
         </div>
         <div class="flex f-wrap f-center">
-            {% # Start loop %}
-            {% # TO DO figure out how card links/buttons should work %}
+            {% for card in block.cards %}
             <article class="card">
                 <img src="" alt="">
-                <h3></h3>
-                <p></p>
+                <h3>{{ card.heading }}</h3>
+                {{ card.content | markdown }}
+                <a class="btn" href="{{ card.url }}" {% if card.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ card.link_text }}</a>
             </article>
             {% # End loop %}
         </div>

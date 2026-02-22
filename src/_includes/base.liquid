@@ -35,7 +35,7 @@
                     <ul>
                     {% for item in header_menu.menu.items %}
                         <li>
-                        <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                        <a href="{{ item.url }}" {% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>
                             {{ item.link_text }}
                         </a>
                         </li>

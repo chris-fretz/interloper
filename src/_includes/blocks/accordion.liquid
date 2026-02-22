@@ -1,32 +1,36 @@
-{% # Check if each group should be its own HTML section %}
-<section class="section accordion">
+<section class="accordion-section">
     <div class="wrap">
-        <div class="accordion-intro">
-            {% if block.intro %}
+        {% # Overall introduction for ALL accordion groups %}
+        {% if block.intro %}
+            <div class="accordion-intro">
                 {{ block.intro | markdown }}
-            {% endif %}
-        </div>
-        {% # start group loop %}
-        <div class="accordion-group">
-            <div class="group-intro">
-                {% if block.intro %}
-                    {{ block.intro | markdown }}
-                {% endif %}
             </div>
-            {% # start loop %}
-            <div class="accordion-row" {% if schema == "yes" %}itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{% endif %}>
-                <div class="accordion-question">
-                    <h3 {% if schema == "yes" %}itemprop="name"{% endif %}>{{ block.accordion_question | markdown }}</h3>
-                    <button class="open-close"></button>
-                </div>
-                <div class="accordion-answer" {% if schema == "yes" %}itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"{% endif %}>
-                    <div class="margin-off" {% if schema == "yes" %}itemprop="text"{% endif %}>
-                        {{ block.accordion_answer | markdown }}
+        {% endif %}
+        
+        {% # Each group is a subsection %}
+        {% for group in block.accordion_groups %}
+            <section class="accordion-group">
+                {% if group.intro %}
+                    <div class="group-intro">
+                        {{ group.intro | markdown }}
                     </div>
-                </div>
-            </div>
-            {% # end loop %}
-        </div>
-        {% # end grouploop %}
+                {% endif %}
+                
+                {% # Individual accordion items %}
+                {% for item in group.items %}
+                    <div class="accordion-row" {% if block.schema %}itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{% endif %}>
+                        <div class="accordion-question">
+                            <h3 {% if block.schema %}itemprop="name"{% endif %}>{{ item.question }}</h3>
+                            <button class="open-close" aria-expanded="false" aria-controls="answer-{{ forloop.index }}"></button>
+                        </div>
+                        <div class="accordion-answer" id="answer-{{ forloop.index }}" {% if block.schema %}itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"{% endif %}>
+                            <div {% if block.schema %}itemprop="text"{% endif %}>
+                                {{ item.answer | markdown }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </section>
+        {% endfor %}
     </div>
 </section>

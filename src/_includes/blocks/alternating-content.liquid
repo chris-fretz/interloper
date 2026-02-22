@@ -1,13 +1,23 @@
-{% # Start loop %}
-<section class="section alt-content">
-    <div class="wrap flex f-wrap">
-        <div class="content">
-            {% # TO DO: Add content here. %}
+{% for item in block.sections %}
+    {% assign is_odd = forloop.index | modulo: 2 %}
+    
+    {% # Determine orientation for section %}
+    {% if block.orientation == "copy_left" and is_odd == 1 or block.orientation == "copy_right" and is_odd == 0 %}
+        {% assign orientation = "copy-left" %}
+    {% else %}
+        {% assign orientation = "copy-right" %}
+    {% endif %}
+    
+    <section class="section alt-content {{ orientation }}">
+        <div class="wrap flex f-wrap">
+            <div class="content">
+                {{ item.copy | markdown }}
+            </div>
+            <div class="image-container">
+                <img class="{% if item.circular %}circular{% endif %}" 
+                    src="{{ item.image }}" 
+                    alt="{{ item.alt_text }}">
+            </div>
         </div>
-        <figure class="img-figure">
-            {% # TO DO: Add logic for adding "rounded" class to image %}
-            <img class="" src="{{ block.image }}" alt="{{ block.image_alt }}">
-        </figure>
-    </div>
-</section>
-{% # End loop %}
+    </section>
+{% endfor %}
