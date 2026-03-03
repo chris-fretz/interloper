@@ -1,13 +1,13 @@
 <section class="accordion-section">
     <div class="wrap">
-        {% # Overall introduction for ALL accordion groups %}
+        {% # Intro to all accordion groups %}
         {% if block.intro %}
             <div class="accordion-intro">
                 {{ block.intro | markdown }}
             </div>
         {% endif %}
         
-        {% # Each group is a subsection %}
+        {% # Loop through each accordion group %}
         {% for group in block.accordion_groups %}
             <section class="accordion-group">
                 {% if group.intro %}
@@ -16,7 +16,7 @@
                     </div>
                 {% endif %}
                 
-                {% # Individual accordion items %}
+                {% # Loop through each individual accordion %}
                 {% for item in group.items %}
                     <div class="accordion-row" {% if block.schema %}itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{% endif %}>
                         <div class="accordion-question">

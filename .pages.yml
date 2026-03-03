@@ -7,9 +7,26 @@ components:
     label: Accordion
     type: object
     list: true
-    description: TO DO... ADD FIELDS FOR ACCORDION HERE
     fields:
-      - 
+      - name: intro
+        label: Accordion Intro
+        type: rich-text
+      - name: accordion_groups
+        label: Accordion Groups
+        type: object
+        list: true
+        fields: 
+        - name: intro
+          label: Group Intro
+          type: rich-text
+        - name: items
+          type: object
+          list: true
+          fields:
+            - name: question
+              type: string
+            - name: answer
+              type: rich-text
 
   alt-content:
     label: Alternating Content
