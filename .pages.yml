@@ -85,7 +85,7 @@ components:
         description: Add the H2 heading here. Additional intro info can be added if needed.
         required: true
         type: rich-text
-      - name: cards_list
+      - name: cards
         label: Cards
         type: object
         list: true

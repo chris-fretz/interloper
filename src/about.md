@@ -82,7 +82,7 @@ blocks:
       ## Cards Section
 
       These cards are really great!
-    cards_list:
+    cards:
       - image: images/150x150.png
         alt_text: 150 x 150 image
         heading: Card 1 heading

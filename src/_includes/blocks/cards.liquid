@@ -13,7 +13,7 @@
                 {{ card.content | markdown }}
                 <a class="btn" href="{{ card.url }}" {% if card.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ card.link_text }}</a>
             </article>
-            {% # End loop %}
+            {% endfor %}
         </div>
     </div>
 </section>
