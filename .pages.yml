@@ -11,6 +11,10 @@ components:
       - name: intro
         label: Accordion Intro
         type: rich-text
+      - name: schema
+        label: Do you need FAQ schema?
+        description: Check the checkbox if this accordion section will be used for frequently asked questions. It will add FAQ schema that will make search engines more likely to display your question and answer in question-based searches.
+        type: boolean
       - name: accordion_groups
         label: Accordion Groups
         type: object
