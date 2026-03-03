@@ -86,7 +86,8 @@ blocks:
       - image: images/150x150.png
         alt_text: 150 x 150 image
         heading: Card 1 heading
-        content: Here's some text for the first card
+        content: Here's some text for the first card. You could add a lot more if you
+          wanted to.
         url: /
         link_text: Go home
         new_tab: false
