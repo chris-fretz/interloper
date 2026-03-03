@@ -45,4 +45,49 @@ blocks:
 
 
       > Let them eat cake!
+  - _block: accordion
+    intro: "## This is the intro for the whole Accordion section."
+    schema: true
+    accordion_groups:
+      - intro: "### This is an intro for an accordion group"
+        items:
+          - question: "Will it rain today? "
+            answer: It might rain, but you can never tell, and to be honest, no one really
+              knows. You could carry an umbrella just to be safe.
+          - question: Do you like pizza?
+            answer: What kind of a question is that!? Who doesn't like pizza!? I'm
+              personally insulted that you would even ask such a question!
+      - intro: "### Second Accordion Group"
+        items:
+          - question: Are we having fun yet?
+            answer: Yes, you betcha!
+          - question: Where will I be in 5 years?
+            answer: Live your best life and you'll find out.
+  - _block: alt-content
+    orientation: copy_left
+    sections:
+      - copy: |-
+          ## Alternating Content Here!
+
+          This is fantastic. It truly is
+        circular: false
+        image: images/150x150.png
+        alt_text: 150 x 150 image
+      - copy: "## Now we switched sides!"
+        circular: false
+        image: images/150x150.png
+        alt_text: 150 x 150 image
+  - _block: cards
+    intro: |-
+      ## Cards Section
+
+      These cards are really great!
+    cards_list:
+      - image: images/150x150.png
+        alt_text: 150 x 150 image
+        heading: Card 1 heading
+        content: Here's some text for the first card
+        url: /
+        link_text: Go home
+        new_tab: false
 ---
