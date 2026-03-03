@@ -19,10 +19,12 @@
                 {% # Loop through each individual accordion %}
                 {% for item in group.items %}
                     <div class="accordion-row" {% if block.schema %}itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{% endif %}>
-                        <div class="accordion-question">
-                            <h3 {% if block.schema %}itemprop="name"{% endif %}>{{ item.question }}</h3>
-                            <button class="open-close" aria-expanded="false" aria-controls="answer-{{ forloop.index }}"></button>
-                        </div>
+                        <button class="accordion-question" 
+                                aria-expanded="false" 
+                                aria-controls="answer-{{ forloop.index }}">
+                            <h4 {% if block.schema %}itemprop="name"{% endif %}>{{ item.question }}</h4>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-answer" id="answer-{{ forloop.index }}" {% if block.schema %}itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"{% endif %}>
                             <div {% if block.schema %}itemprop="text"{% endif %}>
                                 {{ item.answer | markdown }}

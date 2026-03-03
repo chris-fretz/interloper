@@ -10,26 +10,33 @@ components:
     fields:
       - name: intro
         label: Accordion Intro
+        description: This is an optional intro section to introduce the entire accordion section. Use H2 for headings.
         type: rich-text
       - name: schema
         label: Do you need FAQ schema?
-        description: Check the checkbox if this accordion section will be used for frequently asked questions. It will add FAQ schema that will make search engines more likely to display your question and answer in question-based searches.
+        description: Turn this on if this accordion section will be used for frequently asked questions. It will add FAQ schema that will make search engines more likely to display your question and answer in question-based searches.
         type: boolean
       - name: accordion_groups
         label: Accordion Groups
         type: object
+        description: You can create multiple accordion groups to break your accordions into sections (e.g. Products FAQ, Services FAQ, Locations FAQ, etc.)
         list: true
         fields: 
         - name: intro
           label: Group Intro
+          description: This is an optional intro section to introduce the this accordion group. Use H3 for headings.
           type: rich-text
         - name: items
+          label: Individual Accordions
+          description: Add a heading/question and content/answer for each accordion.
           type: object
           list: true
           fields:
             - name: question
+              label: Heading
               type: string
             - name: answer
+              Label: content
               type: rich-text
 
   alt-content:
@@ -38,7 +45,7 @@ components:
       - name: orientation
         label: Starting Orientation
         type: select
-        description: Use the dropdown to select whether you'd like your alternating content to start with the copy on the left and the image on the right, or vice-versa. This is just to choose the first section and all subsequent sections will alternate orientation.
+        description: Use the dropdown to select whether you'd like your alternating content to start with the copy on the left and the image on the right, or vice-versa. This is just to choose the first section and all subsequent sections will alternate in orientation.
         options:
           values:
             - value: copy_left
@@ -52,13 +59,14 @@ components:
         fields: 
         - name: copy
           label: Copy
+          description: Use an H2 for headings.
           type: rich-text
           required: true
         - name: circular
           label: Make The Image Circular?
           type: boolean
           default: false
-          description: Turn this on if you want your image to circular instead of rectangular. You may need to edit your image before uploading to make sure the subject fits well in the middle of the circle.
+          description: Turn this on if you want your image to be circular instead of rectangular. You may need to edit your image before uploading to make sure the subject fits well in the middle of the circle.
         - name: image
           label: Image
           type: image
@@ -74,6 +82,8 @@ components:
     fields:
       - name: intro
         label: Cards Intro
+        description: Add the H2 heading here. Additional intro info can be added if needed.
+        required: true
         type: rich-text
       - name: cards_list
         label: Cards
@@ -91,7 +101,7 @@ components:
           description: Add alt text for screen readers to describe the image.
         - name: heading
           label: Heading
-          type: text
+          type: string
           required: true
         - name: content
           label: Card Content
@@ -99,12 +109,10 @@ components:
         - name: url
           label: CTA button link
           type: string
-          required: true
           description: Add the URL of the call-to-action button link.
         - name: link_text
           label: Link Text
           type: string
-          required: true
           description: Add the text you want displayed for the link.
         - name: new_tab
           label: Open in New Tab?
