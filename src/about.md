@@ -83,12 +83,36 @@ blocks:
 
       These cards are really great!
     cards:
-      - image: images/150x150.png
-        alt_text: 150 x 150 image
+      - image: images/card-1.jpg
+        alt_text: Feels like home
         heading: Card 1 heading
         content: Here's some text for the first card. You could add a lot more if you
           wanted to.
         url: /
         link_text: Go home
+        new_tab: false
+      - image: images/card-2.jpg
+        alt_text: Describe your image here
+        heading: Card 2 heading
+        content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quidem,
+          accusamus voluptatibus laborum itaque sunt officia adipisci hic animi
+          reprehenderit ipsum dolorem quos possimus exercitationem. Excepturi
+          magni delectus doloremque, dignissimos ducimus itaque quidem quibusdam
+          consequuntur ratione, id sit impedit molestiae nulla assumenda tempore
+          quae fuga dolore dolorum ipsa ex nemo.
+        url: /portfolio/
+        link_text: Check out my Portfolio
+        new_tab: false
+      - image: images/card-3.jpg
+        alt_text: Another image
+        heading: Card 3 Heading
+        content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quidem,
+          accusamus voluptatibus laborum itaque sunt officia adipisci hic animi
+          reprehenderit ipsum dolorem quos possimus exercitationem. Excepturi
+          magni delectus doloremque, dignissimos ducimus itaque quidem quibusdam
+          consequuntur ratione, id sit impedit molestiae nulla assumenda tempore
+          quae fuga dolore dolorum ipsa ex nemo.
+        url: /blog/
+        link_text: Blog
         new_tab: false
 ---
