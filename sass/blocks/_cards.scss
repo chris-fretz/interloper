@@ -1,0 +1,20 @@
+.cards {
+    .cards-wrap {
+        gap: 60px;
+    }
+    .card {
+        max-width: 420px;
+    }
+    .wrap-content {
+        flex-direction: column;
+        padding: 20px 18px;
+        height: calc(100% - 261px);
+        background-color: var(--secondary-bg);
+        * {
+            color: var(--text-primary);
+        }
+        .btn-wrap {
+            margin-top: auto;
+        }
+    }
+}
