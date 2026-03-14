@@ -64,7 +64,7 @@ blocks:
           - question: Where will I be in 5 years?
             answer: Live your best life and you'll find out.
   - _block: alt-content
-    orientation: copy_left
+    orientation: copy_right
     sections:
       - copy: |-
           ## Alternating Content Here!
