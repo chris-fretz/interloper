@@ -71,11 +71,11 @@ blocks:
 
           This is fantastic. It truly is
         circular: false
-        image: images/150x150.png
+        image: images/placeholder-550x550.svg
         alt_text: 150 x 150 image
       - copy: "## Now we switched sides!"
         circular: false
-        image: images/150x150.png
+        image: images/placeholder-550x550.svg
         alt_text: 150 x 150 image
   - _block: cards
     intro: |-
