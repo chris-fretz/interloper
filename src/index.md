@@ -1,13 +1,15 @@
 ---
 title: Steadyfooted
 page_setup:
-  seo_description: This is the homepage. It's great
+  seo_description: Steadyfooted is the website of Chris Fretz, web developer. It
+    serves as his personal blog and platform to explore code, politics, and
+    theology.
 hero:
   - _block: hero-with-image
-    hero_image: images/hero-test.jpg
-    alt_text: The desert is calling your name
+    hero_image: images/1920x500.webp
+    alt_text: Just a hero placeholder image for now.
     heading: Welcome to Steadyfooted
-    subheading: Hope you enjoy it!
+    subheading: Taking it one step at a time.
 blocks:
   - _block: text-editor
     content: >-
