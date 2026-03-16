@@ -1,15 +1,16 @@
 <div class="alt-content-wrap {{ block.orientation }}">
 {% for item in block.sections %}
     
-    <section class="section alt-content">
-        <div class="wrap flex f-wrap">
+    <section class="block alt-content">
+        <div class="wrap flex">
             <div class="content">
                 {{ item.copy | markdown }}
             </div>
             <div class="image-container">
                 <img {% if item.circular %}class="circular"{% endif %} 
                     src="{{ item.image }}" 
-                    alt="{{ item.alt_text }}">
+                    alt="{{ item.alt_text }}"
+                    width="520">
             </div>
         </div>
     </section>

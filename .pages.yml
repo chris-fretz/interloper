@@ -48,9 +48,9 @@ components:
         description: Use the dropdown to select whether you'd like your alternating content to start with the copy on the left and the image on the right, or vice-versa. This is just to choose the first section and all subsequent sections will alternate in orientation.
         options:
           values:
-            - value: copy_left
+            - value: copy-left
               label: Copy on left, image on right
-            - value: copy_right
+            - value: copy-right
               label: Image on left, copy on right
       - name: sections
         label: Alt Content sections
