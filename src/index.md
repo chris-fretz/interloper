@@ -19,7 +19,7 @@ blocks:
           projects I've worked on, as well as housing a blog where I write about
           tech, current events, politics, spirituality, and anything else that
           catches my fancy.
-        circular: false
+        circular: true
         image: images/chris-fretz-headshot.webp
         alt_text: Chris Fretz, web developer
   - _block: contact-form
