@@ -1,8 +1,8 @@
 <section class="hero overlay">
     <img 
         class="hero-img" 
-        src="{{ block.hero_image }}" 
-        alt="{{ block.alt_text }}" 
+        src="{{ block.hero_image }}"
+        alt="{{ block.alt_text }}"
         eleventy:widths="320, 768, 1024, 1280, 1920" 
         height="500" 
         sizes="(min-width: 1920px) 1920px, 100vw" 
@@ -10,7 +10,7 @@
         fetchpriority="high"
     >
     <div class="content centered">
-        <h1>{{ block.heading }}<h1>
+        <h1>{{ block.heading }}</h1>
         {% if block.subheading %}
             {{ block.subheading | markdown }}
         {% endif %}

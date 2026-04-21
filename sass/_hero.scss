@@ -8,6 +8,21 @@
     &:not(.simple-hero) {
         aspect-ratio: 1920 / 500;
     }
+    &::before {
+        background-color: $black;
+        opacity: 0.65;
+    }
+    .content {
+        z-index: 2;
+        padding: 50px 20px;
+        width: 100%;
+        max-width: 800px;
+        * {
+            font-family: $heading-font;
+            color: $white;
+            font-weight: 700;
+        }
+    }
 }
 
 .hero-img {
@@ -20,9 +35,3 @@
     object-fit: cover;
 }
 
-.content {
-    z-index: 2;
-    padding: 50px 20px;
-    width: 100%;
-    max-width: 800px;
-}
